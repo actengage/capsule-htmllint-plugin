@@ -1,8 +1,14 @@
 {
     "name": "capsule-htmllint-plugin",
-    "version": "0.1.2",
+    "version": "0.1.5",
     "main": "./lib/index.js",
     "dependencies": {
         "htmllint": "^0.8.0"
+    },
+    "scripts": {
+        "release-patch": "npm version patch --no-git-tag-version; npm run release;",
+        "release-minor": "npm version minor --no-git-tag-version; npm run release;",
+        "release-major": "npm version major --no-git-tag-version; npm run release;",
+        "release": "npm run commit; npm publish; git push;"
     }
 }
