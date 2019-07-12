@@ -1,6 +1,6 @@
 {
     "name": "capsule-htmllint-plugin",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "main": "./lib/index.js",
     "dependencies": {
         "htmllint": "^0.8.0"
